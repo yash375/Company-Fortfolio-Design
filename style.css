@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(font.otf);
+}
+
+.container{
+    height: 100vh;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body{
+    background-color: #f1f1ea;
+    font-family: myfont;
+}
+
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    margin-right: 100px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 80px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+label{
+    display:flex;
+     flex-direction:column;
+     width:45px;
+     cursor:pointer;
+   }
+   
+   label span{
+     background: black;
+     border-radius:10px;
+     height:3px;
+     margin: 3px 0;
+     transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+   }
+   
+   
+   span:nth-of-type(1){
+     width:50%;
+     
+   }
+   
+   span:nth-of-type(2){
+     width:100%;
+   }
+   
+   
+   span:nth-of-type(3){
+     width:75%;
+    
+   }
+   
+   
+   input[type="checkbox"]{
+     display:none;
+   }
+   
+   
+   input[type="checkbox"]:checked ~ span:nth-of-type(1){
+     transform-origin:bottom;
+     transform:rotatez(45deg) translate(8px,0px)
+   }
+   
+   
+   input[type="checkbox"]:checked ~ span:nth-of-type(2){
+     
+     transform-origin:top;
+     transform:rotatez(-45deg)
+   }
+   
+   
+   input[type="checkbox"]:checked ~ span:nth-of-type(3){
+     
+     transform-origin:bottom;
+     width:50%;
+     transform: translate(30px,-11px) rotatez(45deg);
+   
+   }
+   
+
+   .gradient_img{
+    width: 400px;
+    filter: blur(50px);
+    position: sticky;
+    left: 60%;
+    top: 23%;
+   }
+
+.main_text{
+    position: absolute;
+    top: 15%;
+}
+
+.main_text h1{
+    text-transform: uppercase;
+    font-size: 130px;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.main_text h1 span{
+    margin-left: 20%;
+}
+
+.we_are_container{
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-between;
+}
+
+.discuss_project{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 55px;
+}
+
+.who_we_are{
+    margin-right: 10px;
+    text-align: center;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7%;
+}
+
+.leader_info{
+  font-size: 17px;
+  text-transform: uppercase;
+  word-spacing: .75px;
+  letter-spacing: .5px;
+}
+
+.quality_info{
+  font-size: 15px;
+}
+
+.circle_img{
+  position: absolute;
+  width: 210px;
+  top: 65.5%;
+}
+
+
